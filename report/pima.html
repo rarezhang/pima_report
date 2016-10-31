@@ -11751,182 +11751,18 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Social-Media-Monitoring-and-Surveillance-for-Vector-Borne-Diseases">Social Media Monitoring and Surveillance for Vector Borne Diseases<a class="anchor-link" href="#Social-Media-Monitoring-and-Surveillance-for-Vector-Borne-Diseases">&#182;</a></h1><p>This is a research project for developing a strategy and infrastructure to use social media to monitor topics for the purpose of public health surveillance in Pima County, Arizona.</p>
-<p>These include influenza, vector borne disease, and heat related illness.</p>
-<p>The research will in collaboration with the Pima County Health Department and it will develop and implement strategies to accomplish the following:</p>
-<ol>
-<li>Track and monitor social media for key public health topics</li>
-<li>Elicit public feedback and reporting on topics of public health relevance</li>
-<li>Measure the impact and reach of social media campaigns</li>
-</ol>
-<h2 id="1.-Data-Collection">1. Data Collection<a class="anchor-link" href="#1.-Data-Collection">&#182;</a></h2><p><a href="https://twitter.com/">Twitter</a> offers <a href="https://dev.twitter.com/streaming/overview">streaming APIs</a> to give developers and researchers low latency access to its global stream of data. Public streams, which can provide access to the public data flowing through Twitter, were used in this study. 
-Studies have estimated that using Twitter’s Streaming API, researchers can expect to receive 1% of the tweets in near real-time. <a href="http://www.tweepy.org/">Tweepy</a> -- a <a href="https://www.python.org/">Python</a> library for the Twitter API, was used to access tweet information from the Twitter Streaming API.</p>
-<h3 id="Keywords-(vector-borne-diseases-symptoms)">Keywords (vector borne diseases symptoms)<a class="anchor-link" href="#Keywords-(vector-borne-diseases-symptoms)">&#182;</a></h3><p>The <strong>vector borne diseases</strong> symptoms-related stream is to collect only tweets containing any of 64 related keywords that were suggested by clinical collaborators. Figure 1 shows the keywords used in the data collection process.</p>
-<p><strong>Table 1. Keywords Table</strong></p>
-<table>
-<thead><tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td>abdominal pain</td>
-<td>activity change</td>
-<td>acute kidney injury</td>
-<td>altered mental status</td>
-<td>appetite change</td>
-<td>arthralgia (arthralgias)</td>
-<td>back ache (back pain)</td>
-<td>blurred vision (blurry vision)</td>
-</tr>
-<tr>
-<td></td>
-<td>bone pain</td>
-<td>chills</td>
-<td>clammy</td>
-<td>constant throbbing headache</td>
-<td>cough (coughing)</td>
-<td>decreased activity</td>
-<td>decreased appetite (lack of appetite)</td>
-<td>decreased awareness</td>
-</tr>
-<tr>
-<td></td>
-<td>diarrhea</td>
-<td>diffuse rash (rash)</td>
-<td>dizziness</td>
-<td>elevated lft</td>
-<td>fatigue</td>
-<td>fever</td>
-<td>flaccid paralysis</td>
-<td>headache</td>
-</tr>
-<tr>
-<td></td>
-<td>hemoconcentration</td>
-<td>high grade fever</td>
-<td>increased agitation</td>
-<td>increasing obtundation</td>
-<td>joint pain</td>
-<td>joint swelling</td>
-<td>lethargic</td>
-<td>leukopenia</td>
-</tr>
-<tr>
-<td></td>
-<td>lymphadenopathy</td>
-<td>macular rash on upper body</td>
-<td>menses longer than usual.</td>
-<td>mild nausea</td>
-<td>mild sore throat</td>
-<td>muscle aches (muscle pain, muscle weakness)</td>
-<td>myalgia</td>
-<td>n/v/d</td>
-</tr>
-<tr>
-<td></td>
-<td>nausea diarrhea</td>
-<td>neck pain (neck stiffness)</td>
-<td>numbness in hands</td>
-<td>pain in knees</td>
-<td>pain in wrists</td>
-<td>petechiae</td>
-<td>photophobia</td>
-<td>red eyes</td>
-</tr>
-<tr>
-<td></td>
-<td>seizure</td>
-<td>severe headache</td>
-<td>somnolence</td>
-<td>sore throat</td>
-<td>stiffness</td>
-<td>swollen feet hands</td>
-<td>throbbing</td>
-<td>thrombocytopenia</td>
-</tr>
-<tr>
-<td></td>
-<td>transaminitis</td>
-<td>tremors</td>
-<td>unable to focus eyes</td>
-<td>unable to walk</td>
-<td>unconscious</td>
-<td>vomiting</td>
-<td>weakness</td>
-<td>wide based gait</td>
-</tr>
-</tbody>
-</table>
-<p>Figure 1 shows the number of tweets in our Twitter stream for all of the keywords used in data collection.</p>
-<p><a href="../pic/Bar_keywords.html">Open Figure 1</a></p>
-<p><strong>Figure 1. keywords and Frequency of Tweets </strong></p>
-<p><img src="../pic/Bar_keywords.png" alt="alt text" title="Bar_keywords"></p>
-<h3 id="Data-summary">Data summary<a class="anchor-link" href="#Data-summary">&#182;</a></h3><p>Our Twitter dataset was collected from Apr 04, 2016, through Sep 20, 2016, and contains <strong>26,422,695</strong> tweets. On average, about <strong>170,000</strong> tweets were generated from all over the world per day. This demonstrates that Twitter is a promising data source for social media monitoring and surveillance and should be explored further.</p>
-<p><strong>Table 2. Data summary </strong></p>
-<table>
-<thead><tr>
-<th>Dataset</th>
-<th>Number of tweets</th>
-<th>collection period</th>
-<th>Geographical area</th>
-<th>Number of keywords</th>
-<th>Dataset size</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Vector borne dataset</td>
-<td>26,422,695</td>
-<td>2016-4-15 ~ 2016-9-20</td>
-<td>All over the world</td>
-<td>64</td>
-<td>38.819+ GB</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2.-Geographic-Analysis">2. Geographic Analysis<a class="anchor-link" href="#2.-Geographic-Analysis">&#182;</a></h2><p>The geographic location for each tweet was identified using: <strong>location coordinates</strong> (latitude/longitude) and/or <strong>user-specified location</strong>. <a href="https://dev.twitter.com/overview/api/tweets">Read More</a></p>
-<p>Among all the tweets we collected, <strong>0.14% (37,964 / 26,422,695)</strong> of the tweets revealed their coordinates. <strong>0.07% (18,287 / 26,422,695)</strong> of the tweets are from United States (US) <a href="">Northern most latitude: +48.987386; Southern most latitude: +18.005611; West most longitude: -124.626080; East most longitude: -62.361014</a> .</p>
-<p>There were <strong>61.31% (16,200,147 / 26,422,695)</strong> tweets containing location information. However, there is considerable ambiguity in the location information, e.g., “I am somewhere on the earth” or “Moon”.</p>
-<p>Geo-location extraction was performed by using (1) latitude and longitude mapping for the coordinates field and (2) regular expressions analysis for the location field, i.e., matching state names or postal abbreviations on the US states (e.g., Texas or TX), followed by matching city names (e.g. Dallas). We were able to identify location for approximately <strong>9.09% (2,403,950 / 26,422,695)</strong> tweets as one of the US states name.</p>
-<p><strong>Figure 2. Geographic Visualization<br>
-(2016-4-15 ~ 2016-9-20, All over the world, 0.14% 37,964 Tweets)</strong></p>
-<p><img src="../pic/geo_all.png" alt="alt text" title="geo_all"></p>
-<h2 id="3.-Natural-Language-Analysis">3. Natural Language Analysis<a class="anchor-link" href="#3.-Natural-Language-Analysis">&#182;</a></h2><p><a href="https://en.wikipedia.org/wiki/Natural_language_processing">Natural Language Analysis</a> involves natural language understanding and enabling computers to derive meaning from human or natural language input (i.e., tweets textual information).</p>
-<p>Our approach adapts and proposes a combination of different <a href="https://en.wikipedia.org/wiki/Natural_language_processing">Natural Language Processing</a> feature generation methods along with <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a> classfiers to identify and remove various types of noise from social media text as shown in Figure 2.</p>
-<p><strong>Figure 3. Methodology for Signal Extraction from Social Media Text</strong></p>
-<p><img src="../pic/Signal_Extraction_from_Social_Media_Text.png" alt="alt text" title="Methodology for Signal Extraction from Social Media Text"></p>
-<h3 id="Top-words-used-by-Twitter-users">Top words used by Twitter users<a class="anchor-link" href="#Top-words-used-by-Twitter-users">&#182;</a></h3><p>We summarize the top words used by Twitter users in the dataset. "headache", "fever", "weakness", "cough (coughing)", "chils", "pain", "fatigue", "unconscious" are meaningful top words used by Twitter users.</p>
-<p><strong>Figure 4. Top Words Used by Twitter Users</strong></p>
-<p><a href="../pic/Bar_word.html">Open Figure 4</a></p>
+<center> <h1>Social Media Monitoring and Surveillance for Vector Borne Diseases </h1> </center><center> <h1>Visualizations</h1> </center><h2 id="Figure-1.-Keywords-and-Frequency-of-Tweets-"><strong>Figure 1. Keywords and Frequency of Tweets </strong><a class="anchor-link" href="#Figure-1.-Keywords-and-Frequency-of-Tweets-">&#182;</a></h2><p><img src="../pic/Bar_keywords.png" alt="alt text" title="Bar_keywords"></p>
+<h2 id="Figure-2.-Geographic-Visualization-(2016-4-15-~-2016-9-20,-All-over-the-world,-0.14%-37,964-Tweets)"><strong>Figure 2. Geographic Visualization (2016-4-15 ~ 2016-9-20, All over the world, 0.14% 37,964 Tweets)</strong><a class="anchor-link" href="#Figure-2.-Geographic-Visualization-(2016-4-15-~-2016-9-20,-All-over-the-world,-0.14%-37,964-Tweets)">&#182;</a></h2><p><img src="../pic/geo_all.png" alt="alt text" title="geo_all"></p>
+<h2 id="Figure-3.-Methodology-for-Signal-Extraction-from-Social-Media-Text"><strong>Figure 3. Methodology for Signal Extraction from Social Media Text</strong><a class="anchor-link" href="#Figure-3.-Methodology-for-Signal-Extraction-from-Social-Media-Text">&#182;</a></h2><p><img src="../pic/Signal_Extraction_from_Social_Media_Text.png" alt="alt text" title="Methodology for Signal Extraction from Social Media Text"></p>
+<h2 id="Figure-4.-Top-Words-Used-by-Twitter-Users"><strong>Figure 4. Top Words Used by Twitter Users</strong><a class="anchor-link" href="#Figure-4.-Top-Words-Used-by-Twitter-Users">&#182;</a></h2><p><a href="../pic/Bar_word.html">Open Figure 4</a></p>
 <p><img src="../pic/Bar_word.png" alt="alt text" title="Bar_word"></p>
-<p>We further analyze the lexical feature of words used by Twiiter users. <a href="http://partofspeech.org/">Part-of-speech</a> (POS) tagging (also called grammatical tagging) was applided. POS tagging is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its <strong><em>definition</em></strong> and its <strong><em>context</em></strong>.<br>
-Based on the result of POS tagging, we summarize the top nouns and top verbs used by Twitter users in the dataset.</p>
-<p><strong>Figure 5. Top Nouns Used by Twitter Users</strong></p>
-<p><a href="../pic/Bar_noun.html">Open Figure 5</a></p>
+<h2 id="Figure-5.-Top-Nouns-Used-by-Twitter-Users"><strong>Figure 5. Top Nouns Used by Twitter Users</strong><a class="anchor-link" href="#Figure-5.-Top-Nouns-Used-by-Twitter-Users">&#182;</a></h2><p><a href="../pic/Bar_noun.html">Open Figure 5</a></p>
 <p><img src="../pic/Bar_noun.png" alt="alt text" title="Bar_word"></p>
-<p><strong>Figure 6. Top Verbs Used by Twitter Users</strong></p>
-<p><a href="../pic/Bar_verb.html">Open Figure 6</a></p>
+<h2 id="Figure-6.-Top-Verbs-Used-by-Twitter-Users"><strong>Figure 6. Top Verbs Used by Twitter Users</strong><a class="anchor-link" href="#Figure-6.-Top-Verbs-Used-by-Twitter-Users">&#182;</a></h2><p><a href="../pic/Bar_verb.html">Open Figure 6</a></p>
 <p><img src="../pic/Bar_verb.png" alt="alt text" title="Bar_verb"></p>
-<h3 id="Categorize-Tweets-by-Keyword">Categorize Tweets by Keyword<a class="anchor-link" href="#Categorize-Tweets-by-Keyword">&#182;</a></h3><p>A hashtag—written with a # symbol—is used to index <a href="https://support.twitter.com/articles/49309">keywords or topics on Twitter</a>. This function allows people to easily follow topics they are interested in. Hashtagged words that become very popular are often <a href="https://support.twitter.com/articles/101125">Trending Topics</a>.<br>
-We summarize the top-used hashtags in the dataset. Most of the topics are health related, for example, #fever, #headache, #health, #fatigue, #pain; also political related topics are not uncommon, for example, #hackinghilary, #blacklivesmater, #hilaryshealth, #sickhilary.</p>
-<p><strong>Figure 7. Top #hashtags Used by Twitter Users</strong></p>
-<p><a href="../pic/Bar_hashtag.html">Open Figure 7</a></p>
+<h2 id="Figure-7.-Top-#hashtags-Used-by-Twitter-Users"><strong>Figure 7. Top #hashtags Used by Twitter Users</strong><a class="anchor-link" href="#Figure-7.-Top-#hashtags-Used-by-Twitter-Users">&#182;</a></h2><p><a href="../pic/Bar_hashtag.html">Open Figure 7</a></p>
 <p><img src="../pic/Bar_hashtag.png" alt="alt text" title="Bar_hashtag"></p>
-<h3 id="Key-conversations-(topics)-and-trends">Key conversations (topics) and trends<a class="anchor-link" href="#Key-conversations-(topics)-and-trends">&#182;</a></h3><p><a href="https://en.wikipedia.org/wiki/Topic_model">Topic modeling</a> is a form of text mining, a way of identifying patterns in a dataset. <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation</a> (LDA) algorithms was applied in order to discover the latent topics.<br>
-LDA generates topics based on word frequency from a set of documents. LDA is particularly useful for finding reasonably accurate mixtures of topics within a given document set.<br>
-Below are some example topics.</p>
-<p><strong>Figure 8. Topic A: Symptoms</strong></p>
-<p><img src="../pic/wordcloud/relevant.txt.png" alt="alt text" title="relevant"></p>
+<h2 id="Figure-8.-Topic-A:-Symptoms"><strong>Figure 8. Topic A: Symptoms</strong><a class="anchor-link" href="#Figure-8.-Topic-A:-Symptoms">&#182;</a></h2><p><img src="../pic/wordcloud/relevant.txt.png" alt="alt text" title="relevant"></p>
 <p>Example tweets from this topic:</p>
 
 <pre><code>- I have the worst headache😩
@@ -11934,8 +11770,7 @@ Below are some example topics.</p>
 - RT @Cheaats: Eating 3 or 4 Marshmallows helps get rid of a sore throat.
 - When I stay inside all day and watch TV my body start to ache. I'm an active person sitting around isn't for me.
 - hi. i have a fever. what? i don't remember the last time i actually had a fever. help. what is illness.</code></pre>
-<p><strong>Figure 9. Topic B: News</strong></p>
-<p><img src="../pic/wordcloud/news.txt.png" alt="alt text" title="news"></p>
+<h2 id="Figure-9.-Topic-B:-News"><strong>Figure 9. Topic B: News</strong><a class="anchor-link" href="#Figure-9.-Topic-B:-News">&#182;</a></h2><p><img src="../pic/wordcloud/news.txt.png" alt="alt text" title="news"></p>
 <p>Example tweets from this topic:</p>
 
 <pre><code>- Lil Wayne suffers third seizure in under a month https://t.co/yfqdqaPV23 https://t.co/ol9xTp6m1Q
@@ -11943,24 +11778,21 @@ Below are some example topics.</p>
 - RT https://t.co/Jds90xA0Eu Have back pain? We'll have help from noon to 5:30 p.m. tomorrow with @Intermountain. #â€¦ https://t.co/HHOoZz9pGk
 - Researchers say that back pain affects about two-thirds (68%) of women either during or following a pregnancy https://t.co/1kylj5XWh8
 - RT @Mixmag: The science behind why we get chills when listening to music - explained. https://t.co/6I5rSrmmcA https://t.co/FH8Uf3Xfz4</code></pre>
-<p><strong>Figure 10. Topic C: Advertisement</strong></p>
-<p><img src="../pic/wordcloud/ad.txt.png" alt="alt text" title="ad"></p>
+<h2 id="Figure-10.-Topic-C:-Advertisement"><strong>Figure 10. Topic C: Advertisement</strong><a class="anchor-link" href="#Figure-10.-Topic-C:-Advertisement">&#182;</a></h2><p><img src="../pic/wordcloud/ad.txt.png" alt="alt text" title="ad"></p>
 <p>Example tweets from this topic:</p>
 
 <pre><code>- Do you have a retail business? Have you experienced the FEVER of Pokemon-Go? Take advantage of the foot traffic... ://t.co/SE8DXpU5pG
 - for more far out, headache material check out my latest film on lsd ://t.co/CAc1Dehimk
 - Amazing Stretches To Alleviate Lower Back Pain ¦ : ://t.co/o26X5xRYhF ,,, ://t.co/R4qtN6abPK
 - Cough up less for Lenovo Yoga 3 Pro - 80HE011XUS ! Bid on it! Go to eBay ://t.co/XGPjiJKWPd</code></pre>
-<p><strong>Figure 11. Topic D: Irrelevant: Cough</strong></p>
-<p><img src="../pic/wordcloud/cough.txt.png" alt="alt text" title="cough"></p>
+<h2 id="Figure-11.-Topic-D:-Irrelevant:-Cough"><strong>Figure 11. Topic D: Irrelevant: Cough</strong><a class="anchor-link" href="#Figure-11.-Topic-D:-Irrelevant:-Cough">&#182;</a></h2><p><img src="../pic/wordcloud/cough.txt.png" alt="alt text" title="cough"></p>
 <p>Example tweets from this topic:</p>
 
 <pre><code>- RT @emotionlessvibe: Stop asking me to trust you when i'm still coughing up water from the last time you let me drown.
 - RT @zef_aliens: Thread of vines that have made me cough up blood
 - At least most of the bigger players in the MLB are willing to participate in all star activities unlike some sports *cough cough* NBA.
 - I caught have strep throat. ATTN NYERS: Can you please cover your mouth before you cough on me in the future. Thank you.</code></pre>
-<p><strong>Figure 12. Topic E: Irrelevant: Fever</strong></p>
-<p><img src="../pic/wordcloud/fever.txt.png" alt="alt text" title="fever"></p>
+<h2 id="Figure-12.-Topic-E:-Irrelevant:-Fever"><strong>Figure 12. Topic E: Irrelevant: Fever</strong><a class="anchor-link" href="#Figure-12.-Topic-E:-Irrelevant:-Fever">&#182;</a></h2><p><img src="../pic/wordcloud/fever.txt.png" alt="alt text" title="fever"></p>
 <p>Example tweets from this topic:</p>
 
 <pre><code>- @LilKim !!! Give them fever !!! https://t.co/ycSYt02UOd
@@ -11968,123 +11800,33 @@ Below are some example topics.</p>
 - The latest Libra's Gospel Music Fever Digest!   
 - Baby fever 😭🙇
 - Sun is out!! 😃☀ ... Fever is in huhu</code></pre>
-<p><strong>Figure 13. Topic F: Irrelevant: Headache</strong></p>
-<p><img src="../pic/wordcloud/headache.txt.png" alt="alt text" title="headache"></p>
+<h2 id="Figure-13.-Topic-F:-Irrelevant:-Headache"><strong>Figure 13. Topic F: Irrelevant: Headache</strong><a class="anchor-link" href="#Figure-13.-Topic-F:-Irrelevant:-Headache">&#182;</a></h2><p><img src="../pic/wordcloud/headache.txt.png" alt="alt text" title="headache"></p>
 <p>Example tweets from this topic:</p>
 
 <pre><code>- If I'm tired and have a headache she expects me to change my attitude🙄😕
 - My greatest headache and favorite stress reliever is my family 💕
 - Hungry and happy with a headache☺️😌
 - Being in a relationship is a fucking headache...</code></pre>
-<h3 id="Theme-Analysis">Theme Analysis<a class="anchor-link" href="#Theme-Analysis">&#182;</a></h3><p>One of the challenges we needed to address is to extract signal from the noisy Twitter dataset i.e., to distinguish tweets that are relevant to symptoms from tweets that mentioned keywords in an irrelevant context.
-Figure 13 shows the process used for categorizing Twitter dataset.</p>
-<p><strong>Figure 14. Theme Analysis</strong></p>
-<p><img src="../pic/Theme_classification.png" alt="alt text" title="Theme_classification"></p>
-<h4 id="Training-data">Training data<a class="anchor-link" href="#Training-data">&#182;</a></h4><p>According to the result of LDA topic modeling, the <strong>vector borne diseases</strong> symptoms-related tweets can be classified as 4 categories:</p>
-<p><strong>Table 3. Tweets Categories</strong></p>
-<table>
-<thead><tr>
-<th>Label</th>
-<th>Theme</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>I</em></td>
-<td>Irrelevant: not a symptom</td>
-</tr>
-<tr>
-<td><em>R</em></td>
-<td>Relevant: disease symptoms, e.g., fever, diarrhea, ……</td>
-</tr>
-<tr>
-<td><em>N</em></td>
-<td>News: news, policy and government themes</td>
-</tr>
-<tr>
-<td><em>A</em></td>
-<td>Advertisement: marketing messages</td>
-</tr>
-</tbody>
-</table>
-<h4 id="Classification">Classification<a class="anchor-link" href="#Classification">&#182;</a></h4><p><a href="https://en.wikipedia.org/wiki/Statistical_classification">Classification</a> is applied to identify to which of a set of categories a single tweet belongs to.<br>
-To this purpose, a small amount of data needs to be labeled by human operators. 15 junior and senior students from University of Arizona were invited to label <strong>1,537 tweets</strong> (randomly sampled from the dataset) as <em>"Relevant", "Irrelevant", "News"</em> and <em>"Advertisement"</em>.</p>
-<p>The classifier <a href="https://en.wikipedia.org/wiki/Logistic_regression">Logistic Regression</a> was trained on this dataset. A <a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics">10 fold-cross validation</a> was executed to evaluate the <a href="https://en.wikipedia.org/wiki/Evaluation_of_binary_classifiers">performance</a>.</p>
-<p><strong>Table 4. Classification Performance</strong></p>
-<table>
-<thead><tr>
-<th>LogisticRegression</th>
-<th style="text-align:right">Irrelevant</th>
-<th style="text-align:right">Relevant</th>
-<th style="text-align:right">News</th>
-<th style="text-align:right">Advertisement</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://en.wikipedia.org/wiki/Precision_and_recall">precision</a></td>
-<td style="text-align:right">0.690</td>
-<td style="text-align:right">0.653</td>
-<td style="text-align:right">0.677</td>
-<td style="text-align:right">0.267</td>
-</tr>
-<tr>
-<td><a href="https://en.wikipedia.org/wiki/Precision_and_recall">recall</a></td>
-<td style="text-align:right">0.820</td>
-<td style="text-align:right">0.597</td>
-<td style="text-align:right">0.316</td>
-<td style="text-align:right">0.197</td>
-</tr>
-<tr>
-<td><a href="https://en.wikipedia.org/wiki/F1_score">f1-score</a></td>
-<td style="text-align:right">0.746</td>
-<td style="text-align:right">0.616</td>
-<td style="text-align:right">0.413</td>
-<td style="text-align:right">0.136</td>
-</tr>
-<tr>
-<td><strong><a href="https://en.wikipedia.org/wiki/Evaluation_of_binary_classifiers">accuracy</a></strong></td>
-<td style="text-align:right">0.670</td>
-<td style="text-align:right"></td>
-<td style="text-align:right"></td>
-<td style="text-align:right"></td>
-</tr>
-</tbody>
-</table>
-<h4 id="Percentage-of-theme-categories">Percentage of theme categories<a class="anchor-link" href="#Percentage-of-theme-categories">&#182;</a></h4><p>The pie chart below shows the percentage of each category .</p>
-<p><strong>Figure 15. Theme Composition (9.09% tweets from US)</strong></p>
-<p><a href="../pic/Pie_theme_composition.html">Open Figure 15</a></p>
+<h2 id="Figure-14.-Theme-Analysis"><strong>Figure 14. Theme Analysis</strong><a class="anchor-link" href="#Figure-14.-Theme-Analysis">&#182;</a></h2><p><img src="../pic/Theme_classification.png" alt="alt text" title="Theme_classification"></p>
+<h2 id="Figure-15.-Theme-Composition-(9.09%-tweets-from-US)"><strong>Figure 15. Theme Composition (9.09% tweets from US)</strong><a class="anchor-link" href="#Figure-15.-Theme-Composition-(9.09%-tweets-from-US)">&#182;</a></h2><p><a href="../pic/Pie_theme_composition.html">Open Figure 15</a></p>
 <p><img src="../pic/Pie_theme_composition.png" alt="alt text" title="Pie_theme_composition"></p>
-<h2 id="4.-Time-Series-Analysis">4. Time Series Analysis<a class="anchor-link" href="#4.-Time-Series-Analysis">&#182;</a></h2><p><a href="https://en.wikipedia.org/wiki/Time_series">Time series</a> analysis is an illustration of the number of Tweets at successive time intervals. We could extract meaningful characteristics of the data and predict future values based on previously observed patterns.</p>
-<p><strong>Figure 16. Number of Tweets per Day (US)</strong></p>
-<p><a href="../pic/Day.html">Open Figure 16</a></p>
+<h2 id="Figure-16.-Number-of-Tweets-per-Day-(US)"><strong>Figure 16. Number of Tweets per Day (US)</strong><a class="anchor-link" href="#Figure-16.-Number-of-Tweets-per-Day-(US)">&#182;</a></h2><p><a href="../pic/Day.html">Open Figure 16</a></p>
 <p><img src="../pic/Day.png" alt="alt text" title="Day"></p>
-<p><strong>Figure 17. Number of Tweets per Hour (US)</strong></p>
-<p><a href="../pic/heatmap_period_pima_geo.html">Open Figure 17</a></p>
+<h2 id="Figure-17.-Number-of-Tweets-per-Hour-(US)"><strong>Figure 17. Number of Tweets per Hour (US)</strong><a class="anchor-link" href="#Figure-17.-Number-of-Tweets-per-Hour-(US)">&#182;</a></h2><p><a href="../pic/heatmap_period_pima_geo.html">Open Figure 17</a></p>
 <p><img src="../pic/heatmap_period_pima_geo.png" alt="alt text" title="heatmap_period_pima_geo"></p>
-<p><strong>Figure 18. Number of Tweets per Hour (World)</strong></p>
-<p><a href="../pic/heatmap_period.html">Open Figure 18</a></p>
+<h2 id="Figure-18.-Number-of-Tweets-per-Hour-(World)"><strong>Figure 18. Number of Tweets per Hour (World)</strong><a class="anchor-link" href="#Figure-18.-Number-of-Tweets-per-Hour-(World)">&#182;</a></h2><p><a href="../pic/heatmap_period.html">Open Figure 18</a></p>
 <p><img src="../pic/heatmap_period.png" alt="alt text" title="heatmap_period"></p>
-<h2 id="5.-Mapping-and-Visualization">5. Mapping and Visualization<a class="anchor-link" href="#5.-Mapping-and-Visualization">&#182;</a></h2><p><strong>Figure 19. Mapping Timeline</strong></p>
-<p><a href="./mappting_time_line.html">Open Figure 19</a></p>
+<h2 id="Figure-19.-Mapping-Timeline"><strong>Figure 19. Mapping Timeline</strong><a class="anchor-link" href="#Figure-19.-Mapping-Timeline">&#182;</a></h2><p><a href="./mappting_time_line.html">Open Figure 19</a></p>
 <p><img src="../pic/mapping_timeline.png" alt="alt text" title="mapping_timeline"></p>
-<p><strong>Figure 20. Mapping Number of Tweets aggregated by US States</strong></p>
-<p><a href="./mapping_aggregate_states.html">Open Figure 20</a></p>
+<h2 id="Figure-20.-Mapping-Number-of-Tweets-aggregated-by-US-States"><strong>Figure 20. Mapping Number of Tweets aggregated by US States</strong><a class="anchor-link" href="#Figure-20.-Mapping-Number-of-Tweets-aggregated-by-US-States">&#182;</a></h2><p><a href="./mapping_aggregate_states.html">Open Figure 20</a></p>
 <p><img src="../pic/mapping_aggregate_states.png" alt="alt text" title="mapping_aggregate_states"></p>
-<h2 id="6.-Flights-and-Travel-Analysis">6. Flights and Travel Analysis<a class="anchor-link" href="#6.-Flights-and-Travel-Analysis">&#182;</a></h2><h3 id="Airports-and-Flights">Airports and Flights<a class="anchor-link" href="#Airports-and-Flights">&#182;</a></h3><p>According to the literature review, with the outbreaks of vector borne diseases, the number of cases among travelers visiting or returning to the US from affected areas will likely increase. These imported cases could result in local spread of the virus in other parts of the US.</p>
-<p>We visualized all US airposts and Voronoi algorithm was applied. <a href="https://en.wikipedia.org/wiki/Voronoi_diagram">Voronoi diagram</a> is a partitioning of a plane into regions based on distance to points in a specific subset of the plane. For each seed there is a corresponding region consisting of all points closer to that seed than to any other. These regions are called Voronoi cells.</p>
-<p><strong>Figure 21. All Airports in US </strong></p>
-<p><a href="./mapping_airports_all.html">Open Figure 21</a></p>
+<h2 id="Figure-21.-All-Airports-in-US-"><strong>Figure 21. All Airports in US </strong><a class="anchor-link" href="#Figure-21.-All-Airports-in-US-">&#182;</a></h2><p><a href="./mapping_airports_all.html">Open Figure 21</a></p>
 <p><img src="../pic/mapping_airports_all.png" alt="alt text" title="mapping_airports_all"></p>
-<p>Then airposts with only one flight were filtered out. We can hover to see flight routes associated with each airport.</p>
-<p><strong>Figure 22. Mapping Airports and flights</strong></p>
-<p><a href="./mappting_airports_flights.html">Open Figure 22</a></p>
+<h2 id="Figure-22.-Mapping-Airports-and-Flights"><strong>Figure 22. Mapping Airports and Flights</strong><a class="anchor-link" href="#Figure-22.-Mapping-Airports-and-Flights">&#182;</a></h2><p><a href="./mappting_airports_flights.html">Open Figure 22</a></p>
 <p><img src="../pic/mappting_airports_flights.png" alt="alt text" title="mappting_airports_flights"></p>
-<h3 id="Flights-Network-Analysis">Flights Network Analysis<a class="anchor-link" href="#Flights-Network-Analysis">&#182;</a></h3><p><strong>Figure 23. Flights Network Analysiss</strong></p>
-<p><a href="./mappting_flights_network.html">Open Figure 23</a></p>
+<h2 id="Figure-23.-Flights-Network-Analysiss"><strong>Figure 23. Flights Network Analysiss</strong><a class="anchor-link" href="#Figure-23.-Flights-Network-Analysiss">&#182;</a></h2><p><a href="./mappting_flights_network.html">Open Figure 23</a></p>
 <p><img src="../pic/flights_network.png" alt="alt text" title="flights_network.png"></p>
-<h2 id="7.-Twitter-Dataset-Visualization-for-Specific-Vector-(mosquito)">7. Twitter Dataset Visualization for Specific Vector (mosquito)<a class="anchor-link" href="#7.-Twitter-Dataset-Visualization-for-Specific-Vector-(mosquito)">&#182;</a></h2><p>We represented "mosquito" related tweets as a full representation with nodes for Users, Tweets, Hashtags, Urls and Media.</p>
-<p><img src="../pic/mosquito_full_twitter_network_colorcode.png" alt="alt text" title="mosquito_full_twitter_network_colorcode"></p>
+<h2 id="Figure-24.-Twitter-Dataset-Visualization-for-Specific"><strong>Figure 24. Twitter Dataset Visualization for Specific</strong><a class="anchor-link" href="#Figure-24.-Twitter-Dataset-Visualization-for-Specific">&#182;</a></h2><p><img src="../pic/mosquito_full_twitter_network_colorcode.png" alt="alt text" title="mosquito_full_twitter_network_colorcode"></p>
 <p><img src="../pic/mosquito_full_twitter_network.png" alt="alt text" title="mosquito_full_twitter_network"></p>
 
 </div>
